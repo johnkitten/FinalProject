@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>Project Title</title>
+        <title>Thesis Library JK</title>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
@@ -11,9 +11,10 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=567089640031147";
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1406947972869330";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
 
 
         <div class="navbar navbar-inverse navbar-fixed-top">
@@ -58,8 +59,6 @@
             </div>
         </div>
 
-        <!-- scripts -->
-        <!-- =================== -->
         <script src="js/jquery.js"></script>
         <script src="js/underscore.js"></script>
         <script src="js/backbone.js"></script>
@@ -68,8 +67,6 @@
         <script src="js/app.js"></script>
 
 
-        <!-- templates -->
-        <!-- =================== -->
         <script id="tpl-thesis-list" type="text/x-handlebars-template">
             <div class='col-md-7'>
                 <table class='table table-hover'>
@@ -95,6 +92,8 @@
                 <td>
                     <a href='javascript:void(0)' class='btn-view'>View</a> &nbsp;
                     <a href='javascript:void(0)' class='btn-edit'>Edit</a> &nbsp;
+                    <a href='javascript:void(0)' class='btn-delete'>Delete</a> &nbsp
+                    
                 </td>
             </tr>
         </script>
@@ -139,11 +138,11 @@
             <div class="col-lg-8">
                 <h1>{{Year}} : {{Title}}</h1>
                 <p class="lead">{{Subtitle }}</p>
-                <div class="fb-like" data-href="https://pupcoetm.appspot.com/thesis-{{Id}}" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="false"></div>
+                <div class="fb-like" data-href="http://thesislibraryjk.appspot.com/thesis-{{Id}}" data-colorscheme="dark" data-layout="standard" data-action="like" data-show-faces="true" data-send="false"></div>
                 <hr>
                 <p>{{Description }}</p>
                 <hr>
-                <div class="fb-comments" data-href="https://pupcoetm.appspot.com/thesis-{{Id}}"  data-width="The pixel width of the plugin"></div>
+                <div class="fb-comments" data-href="http://thesislibraryjk.appspot.com/thesis-{{Id}}"  data-width="The pixel width of the plugin"></div>
             </div>
         </script>
 
